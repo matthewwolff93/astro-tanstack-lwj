@@ -7,10 +7,13 @@ import { counter, client } from "./store";
 
 /** A counter written with React */
 export function ReactCounter() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
+  const count = useStore(counter);
 
-  const add = () => setCount(count + 1);
-  const subtract = () => setCount(count - 1);
+  // const add = () => setCount(count + 1);
+  // const subtract = () => setCount(count - 1);
+  const add = () => counter.set(count + 1);
+  const subtract = () => counter.set(count - 1);
 
   return (
     <div className="min-h-96 overflow-hidden flex flex-col border shadow-md flex-1 rounded-xl bg-white p-4">

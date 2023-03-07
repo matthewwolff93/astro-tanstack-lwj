@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 specifiers:
   '@astrojs/preact': ^2.0.3
@@ -31,17 +31,17 @@ specifiers:
 
 dependencies:
   '@astrojs/preact': 2.0.3_preact@10.13.0
-  '@astrojs/react': 2.0.2_biqbaboplfbrettd7655fr4n2y
+  '@astrojs/react': 2.0.2_react-dom@18.2.0+react@18.2.0
   '@astrojs/solid-js': 2.0.2_solid-js@1.6.11
   '@astrojs/svelte': 2.0.2_astro@2.0.16+svelte@3.55.1
-  '@astrojs/tailwind': 3.0.1_dcffs6vszochbmkyu5n7efg4ri
+  '@astrojs/tailwind': 3.0.1_astro@2.0.16+tailwindcss@3.2.7
   '@astrojs/vue': 2.0.1_astro@2.0.16+vue@3.2.47
-  '@nanostores/react': 0.4.1_nkfnbc2tpc77iht7asm3uqwau4
-  '@nanostores/solid': 0.3.2_mmacn6hu7f5b6gra6h53zmsivu
-  '@nanostores/vue': 0.6.1_5k5a5xuqaffd2s4dm6vugcn64i
+  '@nanostores/react': 0.4.1_nanostores@0.7.4+react@18.2.0
+  '@nanostores/solid': 0.3.2_nanostores@0.7.4+solid-js@1.6.11
+  '@nanostores/vue': 0.6.1_nanostores@0.7.4+vue@3.2.47
   '@tanstack/query-core': 5.0.0-alpha.0
-  '@tanstack/react-query': 5.0.0-alpha.0_biqbaboplfbrettd7655fr4n2y
-  '@tanstack/react-query-devtools': 5.0.0-alpha.0_mctwnmubpzuv7mddpjna63l3qe
+  '@tanstack/react-query': 5.0.0-alpha.0_react-dom@18.2.0+react@18.2.0
+  '@tanstack/react-query-devtools': 5.0.0-alpha.0_60a766b2817e695fb0637a5a0f6d7b81
   '@tanstack/solid-query': 5.0.0-alpha.0_solid-js@1.6.11
   '@tanstack/svelte-query': 5.0.0-alpha.0_svelte@3.55.1
   '@tanstack/vue-query': 5.0.0-alpha.0_vue@3.2.47
@@ -140,7 +140,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react/2.0.2_biqbaboplfbrettd7655fr4n2y:
+  /@astrojs/react/2.0.2_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-UmQNvzJul5M/Q9aZJXnqz4z0ODZXkLuaNvgsYoKB7OdM8c2v85FsTjMZZJ7BvFo4On31jJ0rL/gwTaCeuYqmpw==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
@@ -188,7 +188,7 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind/3.0.1_dcffs6vszochbmkyu5n7efg4ri:
+  /@astrojs/tailwind/3.0.1_astro@2.0.16+tailwindcss@3.2.7:
     resolution: {integrity: sha512-QSYh/xmz454j1yZU9rjw2J24PpH7j3h2ClesqMaAniOtcuL8RfP7KYCnCrk01xvjwqqO+QBpZNDD/SUhHNtFFg==}
     peerDependencies:
       astro: ^2.0.4
@@ -828,7 +828,7 @@ packages:
     resolution: {integrity: sha512-4KBSyaMj65d8A+2vnzLxtHFu4OmBU4IKO0yLxZ171Itdf9jGV4w+WbG7VsKts2jUdRkFSzsZqpZOz6hTB3qGAw==}
     dev: false
 
-  /@nanostores/react/0.4.1_nkfnbc2tpc77iht7asm3uqwau4:
+  /@nanostores/react/0.4.1_nanostores@0.7.4+react@18.2.0:
     resolution: {integrity: sha512-lsv0CYrMxczbXtoV/mxFVEoL/uVjEjseoP89srO/5yNAOkJka+dSFS7LYyWEbuvCPO7EgbtkvRpO5V+OztKQOw==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -840,7 +840,7 @@ packages:
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
-  /@nanostores/solid/0.3.2_mmacn6hu7f5b6gra6h53zmsivu:
+  /@nanostores/solid/0.3.2_nanostores@0.7.4+solid-js@1.6.11:
     resolution: {integrity: sha512-OH4m81Bls8NCH2ANzqEujPvzzzLlunm0e6Vpqy9mMgBYzOcqxWr3SrZgIVA7KhMsjftINwcpMN7/FKo2MQa1aQ==}
     peerDependencies:
       nanostores: ^0.7.0
@@ -850,7 +850,7 @@ packages:
       solid-js: 1.6.11
     dev: false
 
-  /@nanostores/vue/0.6.1_5k5a5xuqaffd2s4dm6vugcn64i:
+  /@nanostores/vue/0.6.1_nanostores@0.7.4+vue@3.2.47:
     resolution: {integrity: sha512-YYFcgpqrne+0xNlhAfxBX1pgtD8NsLQDsAD/SrKaZulR2qnaQ6YwWR7YKXNzWPiuvSyKD71Hv6p6FYnHyivFzA==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -947,7 +947,7 @@ packages:
     resolution: {integrity: sha512-cnLZlOMQiHmhfTPEoGauQRrF2Za+UcvhnFDqHnQcUTHCxp3dA89TsVeusW3cv8t4XH125fwyn77UwjC1A37Pvw==}
     dev: false
 
-  /@tanstack/react-query-devtools/5.0.0-alpha.0_mctwnmubpzuv7mddpjna63l3qe:
+  /@tanstack/react-query-devtools/5.0.0-alpha.0_60a766b2817e695fb0637a5a0f6d7b81:
     resolution: {integrity: sha512-HNocFq6DjxISeuODSR8czC8QS1+zvDtHq6YYKsDGzUmrkHIQgpFPVJzmiuLlxPPdbQazbTJEg0MOHL+RngG17g==}
     peerDependencies:
       '@tanstack/react-query': 5.0.0-alpha.0
@@ -955,13 +955,13 @@ packages:
       react-dom: ^18.0.0
     dependencies:
       '@tanstack/match-sorter-utils': 8.7.6
-      '@tanstack/react-query': 5.0.0-alpha.0_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': 5.0.0-alpha.0_react-dom@18.2.0+react@18.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       superjson: 1.12.2
     dev: false
 
-  /@tanstack/react-query/5.0.0-alpha.0_biqbaboplfbrettd7655fr4n2y:
+  /@tanstack/react-query/5.0.0-alpha.0_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-5NpEyPh/9nsm+Cma4l0JcdDpTtVhE1YHzCrtUMoyGgeKMcGrqwLUt4ElUsZCSzwXcVJSjECjVccQm3WPMB7hVw==}
     peerDependencies:
       react: ^18.0.0
