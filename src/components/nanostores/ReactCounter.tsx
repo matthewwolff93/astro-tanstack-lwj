@@ -15,6 +15,8 @@ export function ReactCounter() {
   const add = () => counter.set(count + 1);
   const subtract = () => counter.set(count - 1);
 
+  const pokemonQuery = usePokemon(count);
+
   return (
     <div className="min-h-96 overflow-hidden flex flex-col border shadow-md flex-1 rounded-xl bg-white p-4">
       <Header />
@@ -39,11 +41,11 @@ export function ReactCounter() {
         </button>
       </div>
 
-      {/* <pre>{JSON.stringify(pokemonQuery.data?.name, null, 2)}</pre> */}
+      <pre>{JSON.stringify(pokemonQuery.data?.name, null, 2)}</pre>
 
       <CorgiList count={count} />
 
-      {/* <ReactQueryDevtools queryClient={client} /> */}
+      <ReactQueryDevtools queryClient={client} />
     </div>
   );
 }
