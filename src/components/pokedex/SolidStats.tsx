@@ -32,7 +32,7 @@ export function SolidStats() {
     <div class="bg-white/70 flex flex-col p-3 flex-1 backdrop-blur-md rounded-xl h-72">
       <Header />
 
-      <StatsGraph />
+      <StatsGraph data={statsQuery.data} />
 
       <Buttons add={add} subtract={subtract} count={count()} />
     </div>
