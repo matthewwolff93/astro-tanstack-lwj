@@ -15,6 +15,7 @@ export function ReactPicture() {
     {
       queryKey: ["pokemon", count],
       queryFn: () => getPokemon(count),
+      placeholderData: (prevData) => prevData,
     },
     client
   );
@@ -23,7 +24,7 @@ export function ReactPicture() {
     <div className="bg-white/70 flex flex-col p-3 aspect-square backdrop-blur-md rounded-xl h-72">
       <Header />
 
-      <PokemonImage />
+      <PokemonImage data={pokemonQuery.data} />
 
       <Buttons add={add} subtract={subtract} count={count} />
     </div>
